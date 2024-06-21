@@ -1,0 +1,8 @@
+@startuml
+class Pokemon {
+  +int id
+  +String name
+  +String type
+  +JSON abilities
+}
+@enduml

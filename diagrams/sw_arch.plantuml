@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+
+' Define the elements
+entity "Endpoint GET" as EP
+entity "Controller" as C
+entity "Service" as S
+entity "Model" as M
+entity "SQLite" as DB
+
+' Define the connections
+EP --> C : handle request
+C --> S : call service
+S --> M : interact with model
+M --> DB : query database
+
+@enduml

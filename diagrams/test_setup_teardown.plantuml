@@ -1,0 +1,42 @@
+@startuml
+title Jest Setup and Teardown Flow
+
+start
+:Test Suite Starts;
+
+note right
+beforeAll:
+Runs once before all tests
+end note
+:beforeAll;
+
+note right
+beforeEach:
+Runs before each test
+end note
+:beforeEach;
+
+:Individual Test 1;
+
+note right
+afterEach:
+Runs after each test
+end note
+:afterEach;
+
+:beforeEach;
+
+:Individual Test 2;
+
+:afterEach;
+
+note right
+afterAll:
+Runs once after all tests
+end note
+:afterAll;
+
+:Test Suite Ends;
+
+stop
+@enduml
